@@ -45,14 +45,14 @@ class StoreUrlSerializer(serializers.ModelSerializer):
     
     def create(self, validated_data):
         """
-        Perform Create in Serializer
+        Perform Create in Serializer.
         """
         
         new_url_hash_string = self.generate_hash()
         
         if TierAppUrl.objects.filter(
             url_hash_string=new_url_hash_string).exists():
-            raise RepeatedUrlHashException() 
+            raise RepeatedUrlHashException()
 
         validated_data['url_hash_string'] = new_url_hash_string
 
