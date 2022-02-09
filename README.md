@@ -23,11 +23,11 @@ This command will create a new folder with the name `tier`
 ### Clone the project
 The repository is public. You can use the ssh or http link to clone the repository
 ```
-$ git clone git@github.com:junior92jr/ghibli_dashboard.git
+$ git clone git@github.com:junior92jr/tier-challenge.git
 ```
 
 ### Activate your enviroment
-Inside the `ghibli_dashboard` folder run the following command
+Inside the `tier` folder run the following command
 
 ```
 $ source bin/activate
