@@ -1,7 +1,6 @@
 from rest_framework import status, viewsets
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
-from rest_framework.decorators import action
 from rest_framework import mixins
 
 from .models import TierAppUrl
@@ -17,6 +16,7 @@ class TierAppUrlViewset(mixins.CreateModelMixin,
 
     queryset = TierAppUrl.objects.all()
     serializer_class = TierAppUrlSerializer
+    permission_classes = [AllowAny]
 
     def create(self, request):
 
