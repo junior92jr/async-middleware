@@ -1,4 +1,4 @@
-# Django Rest Framework Project Tier
+# Django Rest Framework Async Middleware
 Async Middleware
 
 # Urls Api
